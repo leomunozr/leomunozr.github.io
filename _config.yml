@@ -29,8 +29,8 @@ force-https: True
 #############
 
 lang: "en"
-author: "Leonardo Munoz"
-title: "Leo Munoz"
+author: "Leonardo Muñoz"
+title: "Leo Muñoz"
 description: "My personal site"
 keywords: "personal, resume, portfolio, leo, munoz"
 favicon: "/img/favicon.ico"
@@ -41,7 +41,7 @@ favicon: "/img/favicon.ico"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/wtc.jpg"
+background-img: "../img/cdmx.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -123,7 +123,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "personal-jekyll-theme"
+disqus-shortname: ""
 
 syntax-highlight: True
 
@@ -183,7 +183,7 @@ email: "leonardomr1@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: ""
 author_blurb_image: "/img/author.png"
 
 ##################
