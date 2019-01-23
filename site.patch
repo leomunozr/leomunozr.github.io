@@ -1,0 +1,422 @@
+diff --git a/_config.yml b/_config.yml
+index 0bcfafc..0f4b0a4 100755
+--- a/_config.yml
++++ b/_config.yml
+@@ -3,7 +3,7 @@
+ 
+ # NB! Set your site's url, otherwise stuff will break :)
+ 
+-url: "https://le4ker.github.io"
++url: "https://leomunozr.github.io"
+ 
+ # If you're hosting your site at a Project repository on GitHub pages
+ # (https://yourusername.github.io/repository-name)
+@@ -12,7 +12,7 @@ url: "https://le4ker.github.io"
+ #
+ # NB! Without this *nothing* will work, because it's used in every path :)
+ 
+-baseurl: /personal-jekyll-theme
++baseurl: ""
+ 
+ # Google tracking id
+ 
+@@ -29,10 +29,10 @@ force-https: True
+ #############
+ 
+ lang: "en"
+-author: "John Smith"
+-title: "{ John Smith }"
+-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+-keywords: "smith, jones, personal, jekyll, theme"
++author: "Leonardo Munoz"
++title: "Leo Munoz"
++description: "My personal site"
++keywords: "personal, resume, portfolio, leo, munoz"
+ favicon: "/img/favicon.ico"
+ 
+ ################
+@@ -41,7 +41,7 @@ favicon: "/img/favicon.ico"
+ 
+ black-favicon: "/img/black-lab-glass.ico"
+ 
+-background-img: "../img/intro-bg.jpg"
++background-img: "../img/cdmx.jpg"
+ 
+ ##############################
+ # Dynamic Text on the Header #
+@@ -58,7 +58,7 @@ lines: # You can add HTML Tags in the Text
+   - text: "The lower you fall, the higher you'll fly."
+   - text: "Where’s your will to be weird?"
+ 
+-me-img: "/img/jetpacktocat.png"
++# me-img: "/img/jetpacktocat.png"
+ 
+ # To use facebook profile pic comment the previous line and uncomment the following
+ # line, and replace 'user_id' with your facebook user id.
+@@ -66,7 +66,7 @@ me-img: "/img/jetpacktocat.png"
+ # in the end of the url just before '&type' is your user id.
+ # Note: fbid is not the same as user id and user id only contains numbers
+ 
+-# me-img: "https://graph.facebook.com/user_id/picture?type=large&width=500&height=500"
++me-img: "https://graph.facebook.com/691740881/picture?type=large&width=500&height=500"
+ 
+ # To use github profile pic uncomment the following line and replace 'user_name'
+ # with your github user name.
+@@ -131,22 +131,48 @@ syntax-highlight: True
+ ############
+ 
+ events:
+-  - image: "/img/timeline/spidertocat.png"
+-    date: "September 2013 - Today"
+-    description: "Saving the neighborhood!"
+-  - image: "/img/timeline/baracktocat.jpg"
+-    date: "September 2007 - August 2013"
+-    description: "Started coding"
++  - title: "Globant / Sourceability"
++    date: "October 2018 - Today"
++    description: "Angular developer"
++    image: "/img/timeline/sourceability.png"
++  - title: "Globant / Zaplabs"
++    date: "August 2017 - October 2018"
++    description: "Javascript developer"
++    image: "/img/timeline/zaplabs.png"
++  - title: "Globant / Dreamworks Animation"
++    date: "September 2016 - August 2018"
++    description: "React developer"
++    image: "/img/timeline/dwa.jpeg"
++  - title: "Globant / United Airlines"
++    date: "November 2015 - September 2016"
++    description: "AngularJS developer"
++    image: "/img/timeline/ua.jpeg"
++  - title: "Indigo Smart Software Development"
++    date: "August 2015 - October 2015"
++    description: ".NET developer"
++    image: "/img/timeline/indigo.png"
+ 
+ # First image of the Timeline
+ 
+-timeline-img: "/img/timeline/default.png"
++timeline-img: "/img/timeline/unam.png"
++
++############
++# Resume #
++############
++
++jobs:
++  - title: "position"
++    date: "01/01/1900"
++    description: "description"
++  - title: "position 2"
++    date: "01/01/1900"
++    description: "description 2"
+ 
+ ###########
+ # Contact #
+ ###########
+ 
+-email: "your@email.here"
++email: "leonardomr1@gmail.com"
+ 
+ ################
+ # Author Blurb #
+@@ -164,16 +190,12 @@ author_blurb_image: "/img/author.png"
+ ##################
+ 
+ social:
+-  - title: "facebook"
+-    url: "https://facebook.com/"
+-  - title: "twitter"
+-    url: "https://twitter.com/"
+   - title: "github"
+-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
+-  - title: "bitcoin"
+-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+-  - title: "rss"
+-    url: "/feed.xml"
++    url: "https://github.com/leomunozr"
++  - title: "linkedin"
++    url: "https://www.linkedin.com/in/leomunozr/"
++  - title : "instagram"
++    url: "https://www.instagram.com/leomunozr/"
+ 
+ ############
+ # 404 page #
+@@ -185,9 +207,9 @@ err-404-img: "/img/labtocat.png"
+ # GPG on Keybase #
+ ##################
+ 
+-keybase-username: johnsmith
+-keybase-in-social: True
+-keybase-in-footer: True
++keybase-username: ""
++keybase-in-social: False
++keybase-in-footer: False
+ 
+ ################################################################################
+ 
+@@ -197,8 +219,9 @@ keybase-in-footer: True
+ 
+ pages_list:
+   About: 'about'
+-  Blog: 'latest-post'
++  # Blog: 'latest-post'
+   Timeline: 'timeline'
++  # Resume: 'resume'
+   Contact: 'contact'
+ 
+ # Exclusion list from the generated _site
+diff --git a/_includes/footer.html b/_includes/footer.html
+index 91ff1aa..23b79a1 100755
+--- a/_includes/footer.html
++++ b/_includes/footer.html
+@@ -15,6 +15,4 @@
+     </div>
+ </footer>
+ 
+-<p><br><br><br><br><br><br></p>
+-
+ <!-- Footer End -->
+diff --git a/_includes/head.html b/_includes/head.html
+index a163356..e24cbd1 100755
+--- a/_includes/head.html
++++ b/_includes/head.html
+@@ -19,6 +19,7 @@
+   <link href="{{site.baseurl}}/css/grayscale.css" rel="stylesheet">
+   {% if page.section-type == "index" %}
+   <link href="{{site.baseurl}}/css/timeline.css" rel="stylesheet">
++  <link href="{{site.baseurl}}/css/styles.css" rel="stylesheet">
+   {% endif %}
+ 
+   <!-- Custom Fonts -->
+diff --git a/_includes/header.html b/_includes/header.html
+index aa07da6..525d6d5 100755
+--- a/_includes/header.html
++++ b/_includes/header.html
+@@ -6,7 +6,6 @@
+     <div class="container">
+       <div class="row">
+           <div class="col-md-10 col-md-offset-1">
+-            <h1 class="brand-heading">&nbsp;</h1>
+             <h1 class="brand-heading">&nbsp;</h1>
+             <span class="intro-text">{{ content }}</span>
+             <h5>&nbsp;</h5>
+diff --git a/_includes/timeline.html b/_includes/timeline.html
+index 9f1a091..c28ea60 100644
+--- a/_includes/timeline.html
++++ b/_includes/timeline.html
+@@ -23,10 +23,10 @@
+             </div>
+             <div class="timeline-panel">
+               <div class="timeline-heading">
+-                <h4>{{ event.date }}</h4>
++                <h4>{{ event.title }}</h4>
+               </div>
+               <div class="timeline-body">
+-                {{ event.description | markdownify }}
++                {{ event.description | markdownify }} ({{ event.date }})
+               </div>
+             </div>
+           </li>
+@@ -39,6 +39,13 @@
+         </li>
+       </ul>
+     </div>
++    
++  </div>
++
++  <div class="row">
++    <div class="col-md-10 col-md-offset-1">
++      <p>If you'd like to know more about my work, please check my <a href="{{site.baseurl}}/cv_leo.pdf" target="_blank">resume.</a></p>
++    </div>
+   </div>
+ </section>
+ 
+diff --git a/_sass/_variables.scss b/_sass/_variables.scss
+index c19be69..30e67c2 100644
+--- a/_sass/_variables.scss
++++ b/_sass/_variables.scss
+@@ -1,19 +1,19 @@
+ // Variables
+ 
+ // Main color
+-$primary-color: #000;
++$primary-color: #fff;
+ 
+ // Anchor color
+ $secondary-color: #00cdff;
+ 
+ // Font color
+-$font-color: #fff;
++$font-color: #000;
+ 
+ $navbar-text-shadow: true;
+ $header-text-shadow: true;
+-$header-background-color: $primary-color;
+-$intro-text-color: $font-color;
+-$navbar-color: $font-color;
++$header-background-color: #000;
++$intro-text-color: #fff;
++$navbar-color: #fff;
+ $navbar-lg-collapse-background-color: $header-background-color;
+ $navbar-lg-background: transparent;
+ $navbar-sm-background-color: $navbar-lg-collapse-background-color;
+diff --git a/about.html b/about.html
+index e87552f..b79fa76 100755
+--- a/about.html
++++ b/about.html
+@@ -3,16 +3,6 @@ layout: null
+ section-type: about
+ title: About
+ ---
+-## About
++## Hello, there!
+ 
+-Github's Octocat was designed by Simon Oxley, alongside the white bird Twitter used (before they received a proper logo) as part of a usual routine of cranking out images for iStock. GitHub saw it, and wanted it, presumably under the notion that it can represent how complex code combines to create peculiar things, much like the octopuss... except the CEO of GitHub called it an octocat, and it has been the octocat since <a href="https://www.quora.com/GitHub/What-is-the-story-behind-GitHub%E2%80%99s-octocat-mascot" target="_blank">[via]</a>.
+-
+-<small>
+-Octocat is Github's logo and trademark and here is used to illustrate a fictional character (John Smith) that used the *{ Personal }* Jekyll Theme to build his website.
+-</small>
+-
+-Support the repo by starring or forking it!
+-
+-<iframe src="https://ghbtns.com/github-btn.html?user=le4ker&repo=personal-jekyll-theme&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+-
+-<iframe src="https://ghbtns.com/github-btn.html?user=le4ker&repo=personal-jekyll-theme&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
++I'm a software developer based on marvelous Mexico City. Mainly focused on web apps, my skills include building UIs, programming APIs and some general purpose scripts. I believe in the importance of contributing to the community. 
+diff --git a/css/grayscale.scss b/css/grayscale.scss
+index bd50e39..7f8382d 100644
+--- a/css/grayscale.scss
++++ b/css/grayscale.scss
+@@ -250,7 +250,7 @@ a {
+     ul,
+     ol {
+         text-align: center;
+-        margin: 0 0 25px;
++        margin: 50px 0;
+         font-size: 18px;
+         line-height: 1.5;
+         list-style-position: inside;
+diff --git a/css/timeline.scss b/css/timeline.scss
+index 7ade056..2b31b6e 100755
+--- a/css/timeline.scss
++++ b/css/timeline.scss
+@@ -40,6 +40,7 @@
+     width: 100%;
+     padding: 0 20px 0 100px;
+     text-align: left;
++    min-height: 80px;
+ }
+ 
+ .timeline>li .timeline-panel:before {
+@@ -99,6 +100,7 @@
+     float: right;
+     padding: 0 20px 0 100px;
+     text-align: left;
++    min-height: 80px;
+ }
+ 
+ .timeline>li.timeline-inverted>.timeline-panel:before {
+@@ -120,7 +122,7 @@
+ }
+ 
+ .timeline .timeline-heading h4 {
+-    margin-top: 0;
++    margin: 0;
+     color: inherit;
+ }
+ 
+@@ -139,15 +141,16 @@
+     }
+ 
+     .timeline>li {
+-        margin-bottom: 100px;
++        margin-bottom: 30px;
+         min-height: 100px;
+     }
+ 
+     .timeline>li .timeline-panel {
+         float: left;
+         width: 41%;
+-        padding: 0 20px 20px 30px;
++        padding: 0 20px 0 30px;
+         text-align: right;
++        // min-height: 100px;
+     }
+ 
+     .timeline>li .timeline-image {
+@@ -177,24 +180,27 @@
+ 
+     .timeline>li.timeline-inverted>.timeline-panel {
+         float: right;
+-        padding: 0 30px 20px 20px;
++        padding: 0 30px 0 20px;
+         text-align: left;
++        // min-height: 100px;
+     }
+ }
+ 
+ @media(min-width:992px) {
+     .timeline>li {
+-        min-height: 150px;
++        margin-bottom: 70px;
++        min-height: 100px;
+     }
+ 
+     .timeline>li .timeline-panel {
+-        padding: 0 20px 20px;
++        min-height: 115px;
++        padding: 0 20px;
+     }
+ 
+     .timeline>li .timeline-image {
+-        width: 150px;
+-        height: 150px;
+-        margin-left: -75px;
++        width: 115px;
++        height: 115px;
++        margin-left: -55px;
+     }
+ 
+     .img-me {
+@@ -215,23 +221,26 @@
+     }
+ 
+     .timeline>li.timeline-inverted>.timeline-panel {
+-        padding: 0 20px 20px;
++        min-height: 115px;
++        padding: 0 20px;
+     }
+ }
+ 
+ @media(min-width:1200px) {
+     .timeline>li {
+-        min-height: 170px;
++        margin-bottom: 85px;
++        min-height: 100px;
+     }
+ 
+     .timeline>li .timeline-panel {
+-        padding: 0 20px 20px 100px;
++        min-height: 125px;
++        padding: 0 20px;
+     }
+ 
+     .timeline>li .timeline-image {
+-        width: 170px;
+-        height: 170px;
+-        margin-left: -85px;
++        width: 125px;
++        height: 125px;
++        margin-left: -65px;
+     }
+ 
+     .timeline>li .img-me {
+@@ -248,6 +257,7 @@
+     }
+ 
+     .timeline>li.timeline-inverted>.timeline-panel {
+-        padding: 0 100px 20px 20px;
++        min-height: 125px;
++        padding: 0 20px;
+     }
+ }

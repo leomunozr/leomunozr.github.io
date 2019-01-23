@@ -1,0 +1,49 @@
+---
+---
+
+.intro {
+  background-position-y: top;
+}
+
+section.content-section {
+  padding-top: 8vh;
+}
+
+.resume {
+  border-bottom: solid 2px #fff;
+  border-top: solid 2px #fff;
+  text-align: left;
+  
+  .job {
+    border-bottom: solid 1px #fff;
+    padding: 10px 0;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    
+    &-description {
+      padding-top: 10px;
+    }
+  }
+}
+
+%timeline-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.timeline>li .timeline-panel,
+.timeline>li.timeline-inverted>.timeline-panel {
+  @extend %timeline-panel
+}
+
+section#contact {
+  padding-top: 150px;
+}
