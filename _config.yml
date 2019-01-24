@@ -220,8 +220,8 @@ keybase-in-footer: False
 
 pages_list:
   About: 'about'
-  # Blog: 'latest-post'
   Timeline: 'timeline'
+  Blog: 'https://www.noesunbug.com'
   # Resume: 'resume'
   Contact: 'contact'
 
