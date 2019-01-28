@@ -49,15 +49,13 @@ background-img: "../img/cdmx.jpg"
 
 dynamic-typing: True
 shuffle: True # Shuffle the lines.
-loop: True
+loop: False
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
-start-delay: 200
+start-delay: 2000
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Code is like humor. When you have to explain it, it’s bad. – <i>Cory House</i>"
-  - text: "It works on my machine."
-  - text: "My username is <i>password</i>, and my password is <i>password</i>"
+  - text: "Hello, there!"
 
 # me-img: "/img/jetpacktocat.png"
 
@@ -67,12 +65,12 @@ lines: # You can add HTML Tags in the Text
 # in the end of the url just before '&type' is your user id.
 # Note: fbid is not the same as user id and user id only contains numbers
 
-me-img: "https://graph.facebook.com/691740881/picture?type=large&width=500&height=500"
+# me-img: "https://graph.facebook.com/691740881/picture?type=large&width=500&height=500"
 
 # To use github profile pic uncomment the following line and replace 'user_name'
 # with your github user name.
 
-# me-img: "https://github.com/user_name.png?size=500"
+me-img: "https://github.com/leomunozr.png?size=500"
 
 # To use gravatar profile pic uncomment the following line and replace 'email_hash'
 # with your gravatar profile email hash.
@@ -158,6 +156,27 @@ events:
 timeline-img: "/img/timeline/unam.png"
 
 ############
+# Projects #
+############
+
+projects: 
+  - name: "Spotify stats"
+    description: "A react project"
+    url: "https://github.com/leomunozr/spotify-stats"
+  - name: "Spotify client"
+    description: "A react-native project"
+    url: "https://github.com/leomunozr/spotify-client"
+  - name: "Photo gallery"
+    description: "A JS project"
+    url: "https://github.com/leomunozr/photo-gallery"
+  - name: "Spotify stats"
+    description: "A react project"
+    url: "https://github.com/leomunozr/spotify-stats"
+  - name: "Wii project"
+    description: "A Python project"
+    url: "https://github.com/leomunozr/wiiproject"
+
+############
 # Resume #
 ############
 
@@ -191,12 +210,14 @@ author_blurb_image: "/img/author.png"
 ##################
 
 social:
+  - title: "envelope"
+    url: "mailto:leonardomr1@gmail.com"
   - title: "github"
     url: "https://github.com/leomunozr"
   - title: "linkedin"
     url: "https://www.linkedin.com/in/leomunozr/"
-  - title : "instagram"
-    url: "https://www.instagram.com/leomunozr/"
+  - title: "pencil"
+    url: "https://www.noesunblog.com"
 
 ############
 # 404 page #
@@ -220,10 +241,11 @@ keybase-in-footer: False
 
 pages_list:
   About: 'about'
-  Timeline: 'timeline'
+  Resume: 'timeline'
+  Projects: 'projects'
   Blog: 'https://www.noesunbug.com'
   # Resume: 'resume'
-  Contact: 'contact'
+  # Contact: 'contact'
 
 # Exclusion list from the generated _site
 
