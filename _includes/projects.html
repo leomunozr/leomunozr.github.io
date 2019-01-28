@@ -1,0 +1,21 @@
+<section id="{{ page.section-type }}" class="container content-section text-center">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      {{ page.content | markdownify }}
+      <div class="projects">
+        {% for project in site.projects %}
+        <div class="project">
+          <a href="{{ project.url }}" target="_blank">
+            <div class="project-name">
+              {{ project.name }}
+            </div>
+            <div class="project-description">
+              {{ project.description}}
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
