@@ -169,9 +169,6 @@ projects:
   - name: "Photo gallery"
     description: "A JS project"
     url: "https://github.com/leomunozr/photo-gallery"
-  - name: "Spotify stats"
-    description: "A react project"
-    url: "https://github.com/leomunozr/spotify-stats"
   - name: "Wii project"
     description: "A Python project"
     url: "https://github.com/leomunozr/wiiproject"
@@ -241,7 +238,7 @@ keybase-in-footer: False
 
 pages_list:
   About: 'about'
-  Resume: 'timeline'
+  Work: 'timeline'
   Projects: 'projects'
   Blog: 'https://www.noesunbug.com'
   # Resume: 'resume'
