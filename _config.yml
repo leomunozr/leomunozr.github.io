@@ -189,7 +189,7 @@ jobs:
 # Contact #
 ###########
 
-email: "leonardomr1@gmail.com"
+email: "leo@leomunoz.me"
 
 ################
 # Author Blurb #
@@ -208,7 +208,7 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "envelope"
-    url: "mailto:leonardomr1@gmail.com"
+    url: "mailto:leo@leomunoz.me"
   - title: "github"
     url: "https://github.com/leomunozr"
   - title: "linkedin"
