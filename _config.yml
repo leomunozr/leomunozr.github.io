@@ -164,7 +164,7 @@ projects:
     description: "A react project."
     url: "https://github.com/leomunozr/spotify-stats"
   - name: "Coordinates converter"
-    description: "Convert coordinates from D°M'S" to DD."
+    description: "Convert coordinates from D°M'S\" to DD."
     url: "https://github.com/leomunozr/spotify-client"
   - name: "Photo gallery"
     description: "A JS project."
@@ -172,7 +172,7 @@ projects:
   - name: "Wii project"
     description: "A Python project."
     url: "https://github.com/leomunozr/wiiproject"
-  - name: "Wii project"
+  - name: "setup-react-project"
     description: "Install React and it's dependencies."
     url: "https://github.com/leomunozr/wiiproject"
 
