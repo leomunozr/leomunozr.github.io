@@ -159,7 +159,7 @@ timeline-img: "/img/timeline/unam.png"
 # Projects #
 ############
 
-projects: 
+projects:
   - name: "Spotify stats"
     description: "A react project."
     url: "https://github.com/leomunozr/spotify-stats"
@@ -192,7 +192,7 @@ jobs:
 # Contact #
 ###########
 
-email: "leo@leomunoz.me"
+email: "leo@leomunoz.dev"
 
 ################
 # Author Blurb #
@@ -211,7 +211,7 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "envelope"
-    url: "mailto:leo@leomunoz.me"
+    url: "mailto:leo@leomunoz.dev"
   - title: "github"
     url: "https://github.com/leomunozr"
   - title: "linkedin"
