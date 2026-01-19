@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+.animate-bg-scroll {
+  animation: moveBackground 10s linear infinite;
+}
