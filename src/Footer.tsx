@@ -10,7 +10,7 @@ const Footer = () => {
     >
       <div className="container mx-auto px-6 py-8 text-center">
         <p className={`${theme.colors.footerText} text-sm`}>
-          {t('footer.text')} &copy; {new Date().getFullYear()}. {t('footer.rights')}
+          {t('footer.text')} &copy; {new Date().getFullYear()}.
         </p>
       </div>
     </footer>

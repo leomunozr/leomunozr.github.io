@@ -159,7 +159,6 @@ export const translations = {
     },
     footer: {
       text: "Made with ❤️ by me.",
-      rights: "All Rights Reserved."
     }
   },
   es: {
@@ -325,7 +324,6 @@ export const translations = {
     },
     footer: {
       text: "Hecho con ❤️ por mí.",
-      rights: "Todos los derechos reservados."
     }
   }
 };

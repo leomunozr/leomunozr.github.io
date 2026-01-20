@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="max-w-3xl text-left">
                     <div className="mb-6 flex justify-center md:justify-start">
                         <img 
-                            src="src/assets/me.jpg"
+                            src="assets/me.jpg"
                             alt="Leonardo Muñoz Profile" 
                             className="w-40 h-40 rounded-full shadow-lg object-cover"
                         />

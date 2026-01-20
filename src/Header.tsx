@@ -22,7 +22,7 @@ const Header = () => {
             <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
                 <a href="#home" className={`text-xl md:text-2xl font-bold ${theme.colors.textPrimary} ${theme.transition} hover:scale-105 hover:${theme.colors.accent}`}>
                     <img
-                        src="src/assets/me.jpg"
+                        src="assets/me.jpg"
                         alt="Leonardo Muñoz Profile"
                         className="w-10 h-10 rounded-full object-cover"
                     />
