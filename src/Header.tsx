@@ -18,7 +18,7 @@ const Header = () => {
     const navLinks = allNavLinks.filter(link => link.enabled);
 
     return (
-        <header className="sticky top-0 z-50">
+        <header className={`${theme.colors.headerBg} backdrop-blur-md  md:bg-transparent md:backdrop-opacity-0 sticky top-0 z-50`}>
             <nav className="container mx-auto px-6 py-3 flex md:justify-between items-center">
                 <div></div>
                 <div className={`${theme.colors.headerBg} ${theme.colors.buttonSecondaryBorder} hidden md:flex backdrop-blur-md py-2 md:px-10 space-x-6 items-center rounded-full border-1`}>
@@ -29,7 +29,7 @@ const Header = () => {
                         </a>
                     ))}
                 </div>
-                <div className="flex align-center gap-4">
+                <div className="hidden md:flex align-center gap-4 ">
                     <button onClick={toggleTheme} className={`${theme.colors.headerBg} hover:${theme.colors.cardBgHover} ${theme.colors.buttonSecondaryBorder} backdrop-blur-md p-2 rounded-full ${theme.colors.textSecondary} ${theme.transition} border-1`}>
                         {theme.name === 'dark' ? '☀️' : '🌙'}
                     </button>
@@ -43,7 +43,7 @@ const Header = () => {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </nav>
-            <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden px-6 pb-4`}>
+            <div className={`${isMenuOpen ? 'block' : 'hidden'} ${theme.colors.headerBg} backdrop-blur-md  md:hidden px-6 pb-4`}>
                 {navLinks.map(link => (
                     <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className={`flex items-center space-x-2 py-2 ${theme.colors.textSecondary} ${theme.colors.iconHover}`}>
                         <span>{link.emoji}</span>
