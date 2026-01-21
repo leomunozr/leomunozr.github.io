@@ -10,13 +10,8 @@ export const translations = {
     },
     hero: {
       greeting: "Hi, I'm",
-      subtext: "I'm a passionate developer from Mexico City with 9+ years of experience in both front-end and back-end development.",
+      about: "I'm a software developer from Mexico City 🇲🇽. I focus on web development with extensive experience in React and Node.js. ",
       cta: "✉️ Email me",
-    },
-    about: {
-      title: "About Me",
-      p1: "I'm a passionate developer from Mexico City with 9+ years of experience in both front-end and back-end development. I love building user-friendly web apps that also look great and take pride in writing clean, efficient code.",
-      p2: ""
     },
     skills: {
       title: "My Tech Stack",
@@ -133,22 +128,6 @@ export const translations = {
           imgSrc: 'https://placehold.co/600x400/1f2937/2dd4bf?text=Project+Lorem',
           liveUrl: '#',
           codeUrl: '#'
-        },
-        {
-          title: 'Project Sed Fringilla',
-          description: 'You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi.',
-          tech: 'Open Source',
-          imgSrc: 'https://placehold.co/600x400/1f2937/2dd4bf?text=Project+Sed',
-          liveUrl: '#',
-          codeUrl: '#'
-        },
-        {
-          title: 'Project Praesent',
-          description: 'You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi.',
-          tech: 'Open Source',
-          imgSrc: 'https://placehold.co/600x400/1f2937/2dd4bf?text=Project+Praesent',
-          liveUrl: '#',
-          codeUrl: '#'
         }
       ]
     },
@@ -172,7 +151,7 @@ export const translations = {
     },
     hero: {
       greeting: "Hola, soy",
-      subtext: "Ingeniero de Software. Soy un desarrollador apasionado de la Ciudad de México con más de 9 años de experiencia en desarrollo front-end y back-end.",
+      about: "Desarrollador de software de la Ciudad de México 🇲🇽. Enfocado principalmente en tecnologías web con amplia experiencia en React y Node.js.",
       cta: "✉️ Contáctame",
     },
     about: {
@@ -296,22 +275,6 @@ export const translations = {
           description: 'Puedes usar esta sección para tus proyectos paralelos. Lorem ipsum dolor sit amet.',
           tech: 'Open Source',
           imgSrc: 'https://placehold.co/600x400/1f2937/2dd4bf?text=Project+Lorem',
-          liveUrl: '#',
-          codeUrl: '#'
-        },
-        {
-          title: 'Project Sed Fringilla',
-          description: 'Puedes usar esta sección para tus proyectos paralelos. Cras dapibus. Vivamus elementum semper nisi.',
-          tech: 'Open Source',
-          imgSrc: 'https://placehold.co/600x400/1f2937/2dd4bf?text=Project+Sed',
-          liveUrl: '#',
-          codeUrl: '#'
-        },
-        {
-          title: 'Project Praesent',
-          description: 'Puedes usar esta sección para tus proyectos paralelos. Cras dapibus. Vivamus elementum semper nisi.',
-          tech: 'Open Source',
-          imgSrc: 'https://placehold.co/600x400/1f2937/2dd4bf?text=Project+Praesent',
           liveUrl: '#',
           codeUrl: '#'
         }

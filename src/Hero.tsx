@@ -26,9 +26,8 @@ const Hero = () => {
                         {t('hero.greeting')} <span className={theme.colors.accent}>Leo Muñoz</span>.
                     </h1>
 
-                    <div className={`text-md md:text-lg ${theme.colors.textSecondary} md:max-w-2xl space-y-4 leading-relaxed`}>
-                        <p>{t('about.p1')}</p>
-                        <p>{t('about.p2')}</p>
+                    <div className={`text-md mb-4 md:text-lg ${theme.colors.textSecondary} md:max-w-2xl space-y-4 leading-relaxed`}>
+                        <p>{t('hero.about')}</p>
                     </div>
                     <div className="flex space-x-4 items-center justify-center md:justify-start">
                         {socialLinks.map((link, index) => <SocialIcon key={index} href={link.href} pathData={link.pathData} />)}

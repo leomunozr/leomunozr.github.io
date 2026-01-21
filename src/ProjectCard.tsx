@@ -15,20 +15,11 @@ const ProjectCard = ({
 
   return (
     <div
-      className={`${theme.colors.cardBg} hover:${theme.colors.cardBgHover} rounded-xl overflow-hidden shadow-md transition-all duration-300 flex flex-col h-full group border backdrop-opacity-100 ${theme.colors.timelineBorder}`}
+      className={`${theme.colors.cardBg} hover:${theme.colors.cardBgHover} rounded-xl overflow-hidden transition-all duration-300 flex flex-col h-full group border backdrop-opacity-100 ${theme.colors.timelineBorder}`}
     >
-      {/* <div className="relative overflow-hidden h-36"> 
-        <img 
-            src={imgSrc} 
-            alt={title} 
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
-        />
-        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-      </div> */}
-
-      <div className="p-4 flex flex-col flex-grow">
+      <div className="p-3 flex flex-col flex-grow">
         <div className="flex-grow">
-            <h3 className={`text-lg font-bold ${theme.colors.textPrimary} mb-2 group-hover:${theme.colors.accent} transition-colors`}>
+            <h3 className={`text-md font-bold ${theme.colors.textPrimary} mb-1 group-hover:${theme.colors.accent} transition-colors`}>
             {title}
             </h3>
             <p className={`${theme.colors.textSecondary} text-xs leading-relaxed mb-4`}>{description}</p>
