@@ -4,39 +4,40 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import Projects from "./Projects";
-import Skills from "./Skills";
-import { ThemeProvider, useTheme } from "./theme/ThemeProvider";
-import { LanguageProvider } from "./language/LanguageProvider";
+import { SkillsList } from "./Skills";
+import { useTheme } from "./theme/ThemeProvider";
 import { featureFlags } from "./config/featureFlags";
 import HeroBackground from "./HeroBackground";
 
-export default function App() {
-  return (
-    <ThemeProvider>
-      <LanguageProvider>
-        <AppContent />
-      </LanguageProvider>
-    </ThemeProvider>
-  );
-}
-
-// We extract the main content to a new component so it can access the theme context
-const AppContent = () => {
+const App = () => {
   const { theme } = useTheme();
   return (
     <div
       className={`${theme.colors.background} ${theme.colors.textPrimary} min-h-screen ${theme.transition}`}
     >
-            <HeroBackground />
+      <HeroBackground />
       <Header />
       <main>
         <Hero />
-        {featureFlags.enableSkills && <Skills />}
-        {featureFlags.enableExperience && <Experience />}
-        {featureFlags.enableProjects && <Projects />}
+        <div className={`container mx-auto px-8 lg:px-20 xl:px-50 py-5 md:py-12`}>
+          <div className="flex flex-col md:flex-row gap-12">
+
+            <div className="md:w-3/4">
+              {featureFlags.enableProjects && <Projects />}
+            </div>
+
+            <div className="md:w-1/4">
+              {featureFlags.enableExperience && <Experience />}
+            </div>
+          </div>
+        </div>
+
+        {featureFlags.enableSkills && <SkillsList />}
         {featureFlags.enableContact && <Contact />}
       </main>
       <Footer />
     </div>
   );
 };
+
+export default App;

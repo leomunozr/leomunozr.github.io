@@ -11,7 +11,7 @@ export const translations = {
     hero: {
       greeting: "Hi, I'm",
       subtext: "I'm a passionate developer from Mexico City with 9+ years of experience in both front-end and back-end development.",
-      cta: "View My Work",
+      cta: "✉️ Email me",
     },
     about: {
       title: "About Me",
@@ -158,7 +158,7 @@ export const translations = {
       cta: "Email Me"
     },
     footer: {
-      text: "Made with ❤️ by me.",
+      text: "Leo Muñoz.",
     }
   },
   es: {
@@ -173,7 +173,7 @@ export const translations = {
     hero: {
       greeting: "Hola, soy",
       subtext: "Ingeniero de Software. Soy un desarrollador apasionado de la Ciudad de México con más de 9 años de experiencia en desarrollo front-end y back-end.",
-      cta: "Ver Mis Trabajos",
+      cta: "✉️ Contáctame",
     },
     about: {
       title: "Sobre Mí",
@@ -323,7 +323,7 @@ export const translations = {
       cta: "Envíame un Email"
     },
     footer: {
-      text: "Hecho con ❤️ por mí.",
+      text: "Leo Muñoz.",
     }
   }
 };

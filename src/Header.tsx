@@ -10,8 +10,8 @@ const Header = () => {
 
     const allNavLinks = [
         { href: '#skills', label: t('nav.skills'), emoji: '💡', enabled: featureFlags.enableSkills },
-        { href: '#experience', label: t('nav.experience'), emoji: '💼', enabled: featureFlags.enableExperience },
         { href: '#projects', label: t('nav.projects'), emoji: '🚀', enabled: featureFlags.enableProjects },
+        { href: '#experience', label: t('nav.experience'), emoji: '💼', enabled: featureFlags.enableExperience },
         { href: '#contact', label: t('nav.contact'), emoji: '📬', enabled: featureFlags.enableContact },
     ];
 
@@ -19,15 +19,8 @@ const Header = () => {
 
     return (
         <header className={`${theme.colors.headerBg} backdrop-blur-md sticky top-0 z-50`}>
-            <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
-                <a href="#home" className={`text-xl md:text-2xl font-bold ${theme.colors.textPrimary} ${theme.transition} hover:scale-105 hover:${theme.colors.accent}`}>
-                    <img
-                        src="assets/me.jpg"
-                        alt="Leonardo Muñoz Profile"
-                        className="w-10 h-10 rounded-full object-cover"
-                    />
-                </a>
-                <div className="hidden md:flex space-x-6 items-center">
+            <nav className="container mx-auto px-6 py-3 flex justify-end items-center">
+                <div className="hidden md:flex md:px-30 space-x-6 items-center">
                     {navLinks.map(link => (
                         <a key={link.href} href={link.href} className={`flex items-center space-x-1 ${theme.colors.textSecondary} ${theme.colors.iconHover} ${theme.transition} group`}>
                             <span className="group-hover:scale-110 transition-transform">{link.emoji}</span>

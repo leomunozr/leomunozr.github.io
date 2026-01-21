@@ -1,7 +1,7 @@
 export const featureFlags = {
     enableAbout: true,
-    enableSkills: true,
+    enableSkills: false,
     enableExperience: true,
     enableProjects: true,
-    enableContact: true,
+    enableContact: false,
 };
