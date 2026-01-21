@@ -33,7 +33,7 @@ export const lightTheme = {
         buttonPrimaryBgHover: 'hover:bg-[#357abd]',
         buttonPrimaryText: 'text-white',
         
-        buttonSecondaryBorder: 'border-slate-400',
+        buttonSecondaryBorder: 'border-slate-300',
         buttonSecondaryText: 'text-slate-700',
         buttonSecondaryBgHover: 'hover:bg-slate-200', // Hover matches secondary
         
