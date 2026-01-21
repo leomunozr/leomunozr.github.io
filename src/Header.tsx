@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <header className={`${theme.colors.headerBg} backdrop-blur-md sticky top-0 z-50`}>
-            <nav className="container mx-auto px-6 py-3 flex justify-end items-center">
+            <nav className="container mx-auto px-6 py-3 flex md:justify-end items-center">
                 <div className="hidden md:flex md:px-30 space-x-6 items-center">
                     {navLinks.map(link => (
                         <a key={link.href} href={link.href} className={`flex items-center space-x-1 ${theme.colors.textSecondary} ${theme.colors.iconHover} ${theme.transition} group`}>

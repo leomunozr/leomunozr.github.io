@@ -6,10 +6,10 @@ interface ThemeContextProps {
   toggleTheme: () => void;
 }
 
-const ThemeContext = createContext<ThemeContextProps>({ theme: darkTheme, toggleTheme: () => { } });
+const ThemeContext = createContext<ThemeContextProps>({ theme: lightTheme, toggleTheme: () => { } });
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState(darkTheme);
+  const [theme, setTheme] = useState(lightTheme);
 
   useEffect(() => {
     const root = window.document.documentElement;
